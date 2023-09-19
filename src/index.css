@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .navbar {
+        @apply flex gap-[30rem] justify-around grow p-7 border-b-2 border-b-[black] border-solid;
+      }
+    .navitem {
+        @apply flex gap-20;
+      }
+    .navbar h1 {
+        @apply text-[24px] font-semibold;
+      }
+}
+
+ul:hover{
+  cursor: pointer;
+}
+ul{
+  font-size: 17px;
+  padding-top: 5px;
+}
+
+li:hover{
+  transition: .1s ease-in-out;
+  transform: scale(1.15);
+}
+
+.div-1{
+  background-color:#dfede6;
+}
+
+.navbar{
+  padding: 10px;
+}
+.navbar h1{
+  position: relative;
+  left: -70px;
+}
